@@ -1,0 +1,114 @@
+@import '../../../assets/css/bootstrap-4.2.1.min.css';
+@import '../../../assets/css/animate-3.7.0.min.css';
+
+
+.container-fluid{
+    background: #000;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; //Don't forget  align items, aligns the item to the center on a horizontal axis
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 1rem;
+}
+
+nav a:hover{
+    color: rgb(182, 158, 21,);
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: .25rem;
+    transition: background-color .22s ease, color .22s ease;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.socials ul{
+    display: flex;
+    justify-content: center;
+}
+
+.socials li{
+    list-style: none;
+    font-size: x-large;
+    padding-left: 1.5rem;
+}
+
+.socials a{
+    color: white;
+}
+
+.socials li:hover{
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    color: rgb(169, 10, 184);
+}
+
+.fa-youtube:hover{
+    color: red;
+}
+
+.fa-facebook-f:hover{
+    color: rgb(15, 139, 240);
+}
+
+.toggleview{
+    transform: translateY(0) !important; // This line of code will make the navbar diappear so if you use
+} // X translate then it will not disappear and we want it to disappear so that the user will have to click
+    // the three icon bars for the navbar to appear
+
+@media (min-width: 768px){
+    .icon-bars{
+        display: none !important;
+    }   
+}
+
+@media(max-width: 768px){
+
+    .icon-bars{
+        font-size: x-large;
+    }
+
+    nav li{
+        padding-top: 2rem;
+        font-size: x-large;
+    }
+
+    nav li a{
+        margin-bottom: 2rem;
+    }
+
+    #navbar-ul{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 15rem;
+        padding-top: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+        transition: .5s ease-in-out;
+        z-index: 99999;
+        background: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-200%); // As you can see down here we translated with X this is to make the 
+    } // navbar appear from the side ie from left to right but if we use Y it will apppear from top to bottom
+}
