@@ -18,12 +18,12 @@ nav ul{
 
 nav li{
     list-style: none;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    transition: transform .2s;
 }
 
-nav a:hover{
-    color: rgb(182, 158, 21,);
-    cursor: pointer;
+nav li:hover{
+    transform: scale(1.3);
 }
 
 nav a{
@@ -33,8 +33,18 @@ nav a{
     transition: background-color .22s ease, color .22s ease;
 }
 
-img:hover{
+nav a:hover{
+    color: rgb(182, 158, 21,);
     cursor: pointer;
+}
+
+nav img{
+    transition: transform .2s;
+}
+
+nav img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .socials ul{
@@ -45,7 +55,13 @@ img:hover{
 .socials li{
     list-style: none;
     font-size: x-large;
-    padding-left: 2rem;
+    margin-left: 2rem;
+    transition: transform .2s; 
+    /* The aim of the transition here is to animate the scale transformation when the mouse
+    is hovering on top of the object, ie make it a little bit slow and you must but the 
+    transition in the exact tag that you are going to apply the hover and transform property on
+    For Eg the (.socials li) will contain the transition animation of the transformation while
+    the (.socials li:hover) will contain the transformation as seen below */
 }
 
 .socials a{
@@ -54,6 +70,7 @@ img:hover{
 
 .socials li:hover{
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 .fa-instagram:hover{
