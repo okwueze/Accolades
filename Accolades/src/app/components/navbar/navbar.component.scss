@@ -22,6 +22,8 @@ nav li{
     transition: transform .2s;
 }
 
+
+
 nav li:hover{
     transform: scale(1.3);
 }
@@ -93,7 +95,11 @@ nav img:hover{
 @media (min-width: 768px){
     .icon-bars{
         display: none !important;
-    }   
+    }  
+    
+    hr{
+        display: none;
+    }
 }
 
 @media(max-width: 768px){
