@@ -2,10 +2,11 @@
 @import '../../../assets/css/animate-3.7.0.min.css';
 
 
-img{
-//      background-image: url(../../../assets/img/music6.jpg);
-//      background-repeat: no-repeat;
-//      background-size: cover;
-      background-color: #212121;
-      background-blend-mode: multiply;
+.bg-imgage{
+     min-height: 600px;      
+     background-image: url(../../../assets/img/music6.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-color: #302d2d;
+     background-blend-mode: multiply;
 }
