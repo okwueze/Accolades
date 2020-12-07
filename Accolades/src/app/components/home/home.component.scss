@@ -2,11 +2,59 @@
 @import '../../../assets/css/animate-3.7.0.min.css';
 
 
-.bg-imgage{
-     min-height: 600px;      
+.bg-image{
+     min-height: 750px;      
      background-image: url(../../../assets/img/music6.jpg);
      background-size: cover;
      background-repeat: no-repeat;
      background-color: #302d2d;
      background-blend-mode: multiply;
 }
+
+.texts{
+     color: white;
+     text-align: center;
+     overflow: hidden;
+}
+
+.texts h2{
+     position: relative;
+     font-size: 3rem;
+     padding-top: 12rem;
+     color: #252839;
+     -webkit-text-stroke: 0.3rem #383d52;
+}
+
+.texts h2::before{
+     content: attr(data-text);
+     font-size: 3rem;
+     position: absolute;
+     top: 0;
+     left: center;
+     width: 0%;
+     height: 100%;
+     padding-top: 12rem;
+     color: rgb(216, 176, 15);
+     -webkit-text-stroke: 0rem #383d52;
+     border-right: 2px solid  rgb(216, 176, 15);
+     overflow: hidden;
+     animation: animate 6s linear infinite;
+
+}
+@keyframes animate{
+     0%,10%,100%
+     {
+          width: 0;
+     }
+     70%,90%
+     {
+          width: 100%;
+     }
+
+
+}
+
+.texts h3{
+     font-size: 2rem;
+}
+
