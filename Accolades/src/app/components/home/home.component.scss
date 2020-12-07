@@ -1,15 +1,15 @@
-@import '../../../assets/css/bootstrap-4.2.1.min.css';
-@import '../../../assets/css/animate-3.7.0.min.css';
+// @import '../../../assets/css/bootstrap-4.2.1.min.css';
+// @import '../../../assets/css/animate-3.7.0.min.css';
 
 
-.bg-image{
-     min-height: 750px;      
-     background-image: url(../../../assets/img/music6.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-color: #302d2d;
-     background-blend-mode: multiply;
-}
+// .bg-image{
+//      min-height: 750px;      
+//      background-image: url(../../../assets/img/music6.jpg);
+//      background-size: cover;
+//      background-repeat: no-repeat;
+//      background-color: #302d2d;
+//      background-blend-mode: multiply;
+// }
 
 .texts{
      color: white;
@@ -17,44 +17,29 @@
      overflow: hidden;
 }
 
-.texts h2{
-     position: relative;
-     font-size: 3rem;
-     padding-top: 12rem;
-     color: #252839;
-     -webkit-text-stroke: 0.3rem #383d52;
+.carousel-item{
+     height: 90vh;
+     min-height: 300px;
+     background: no-repeat center center scroll;
+     background-size: cover;
 }
 
-.texts h2::before{
-     content: attr(data-text);
-     font-size: 3rem;
-     position: absolute;
-     top: 0;
-     left: center;
-     width: 0%;
-     height: 100%;
-     padding-top: 12rem;
-     color: rgb(216, 176, 15);
-     -webkit-text-stroke: 0rem #383d52;
-     border-right: 2px solid  rgb(216, 176, 15);
-     overflow: hidden;
-     animation: animate 6s linear infinite;
-
-}
-@keyframes animate{
-     0%,10%,100%
-     {
-          width: 0;
-     }
-     70%,90%
-     {
-          width: 100%;
-     }
-
-
+.carousel-caption{
+     bottom: 17rem;
 }
 
-.texts h3{
-     font-size: 2rem;
+.carousel-caption h5{
+     font-size: 4.5rem;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     font-family: 'Merienda', cursive;
+}
+
+.carousel-caption p{
+     // width: 60%;
+     margin: auto;
+     font-size: 1.5rem;
+     line-height: 1.9;
+     font-family: 'Poppins', sans-serif;
 }
 
