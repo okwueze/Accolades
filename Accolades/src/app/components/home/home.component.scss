@@ -1,15 +1,6 @@
-@import '../../../assets/css/bootstrap4.5.css';
+// @import '../../../assets/css/bootstrap4.5.css';
 // @import '../../../assets/css/animate-3.7.0.min.css';
 
-
-.slide{
-     // min-height: 750px;      
-     // background-image: url(../../../assets/img/music6.jpg);
-     // background-size: cover;
-     // background-repeat: no-repeat;
-     color: #302d2d !important;
-     mix-blend-mode: multiply;
-}
 
 .texts{
      color: white;
@@ -18,14 +9,14 @@
 }
 
 .carousel-item{
-     height: 90vh;
+     height: 100vh;
      min-height: 300px;
      background: no-repeat center center scroll;
      background-size: cover;
 }
 
 .carousel-caption{
-     bottom: 17rem;
+     bottom: 12rem;
 }
 
 .carousel-caption h5{
@@ -54,3 +45,31 @@
      margin-top: 4rem;
 }
 
+// Events
+
+.events{
+     background-color: rgb(34, 32, 32);
+}
+
+.events h2{
+     padding: 5rem;
+     font-family: 'poppins', sans-serif;
+     text-align: center;
+}
+
+.events .row{
+     margin-left: 1rem;
+}
+
+// ARTIST
+
+.artist{
+     background-color: rgb(34, 32, 32);
+}
+
+.artist h2{
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     padding-top: 10rem;
+     padding-bottom: 5rem;
+}
