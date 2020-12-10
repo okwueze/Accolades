@@ -1,15 +1,15 @@
-// @import '../../../assets/css/bootstrap-4.2.1.min.css';
+@import '../../../assets/css/bootstrap4.5.css';
 // @import '../../../assets/css/animate-3.7.0.min.css';
 
 
-// .bg-image{
-//      min-height: 750px;      
-//      background-image: url(../../../assets/img/music6.jpg);
-//      background-size: cover;
-//      background-repeat: no-repeat;
-//      background-color: #302d2d;
-//      background-blend-mode: multiply;
-// }
+.slide{
+     // min-height: 750px;      
+     // background-image: url(../../../assets/img/music6.jpg);
+     // background-size: cover;
+     // background-repeat: no-repeat;
+     color: #302d2d !important;
+     mix-blend-mode: multiply;
+}
 
 .texts{
      color: white;
@@ -37,9 +37,20 @@
 
 .carousel-caption p{
      // width: 60%;
-     margin: auto;
+     // margin: auto;
      font-size: 1.5rem;
      line-height: 1.9;
      font-family: 'Poppins', sans-serif;
+}
+
+.carousel-caption a{
+     text-decoration: none;
+     text-transform: uppercase;
+     // background: rgb(208, 180, 22);
+     // padding: 10px 30px;
+     color: white;
+     font-family: 'poppins', sans-serif;
+     border-radius: 2rem;
+     margin-top: 4rem;
 }
 
