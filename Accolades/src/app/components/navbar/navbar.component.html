@@ -1,15 +1,15 @@
 <html>
     <body>
         
-        <div class="container-fluid text-white fixed-top">
-            <nav class="container">
+        <nav class="container-fluid text-white fixed-top bg-color">
+            <div class="container">
                 <img src="../../../assets/img/Accolades 3.jpg" alt="Logo" class="image_1" width="100px" height="100px">
                 <ul class="menu" id="navbar-ul" [ngClass]="{'toggleview': mobileMenu == true}">
                     <img src="../../../assets/img/Accolades 3.jpg" alt="Logo" class="image_2" width="140px" height="140px">
                     <li><a class="active" href=""><i class="fas fa-home mr-1"></i>Home</a></li>
                     <li><a href=""><i class="fas fa-address-card mr-1"></i>About</a></li>
-                    <li><a href=""><i class="fas fa-award mr-1"></i>Awards</a></li>
-                    <li><a href=""><i class="fas fa-people-arrows mr-1"></i>Nominees</a></li>
+                    <!-- <li><a href=""><i class="fas fa-award mr-1"></i>Awards</a></li>
+                    <li><a href=""><i class="fas fa-people-arrows mr-1"></i>Nominees</a></li> -->
                     <li class="nav-menu"><a href=""><i class="fas fa-newspaper mr-1"></i>News</a></li> 
                     <div class="socials">
                         <ul>
@@ -21,7 +21,7 @@
                 </ul>
                 <i class="fas fa-bars d-sm-block d-md-none icon-bars" 
                 (click)="toggleSidebar()" id="toggle"></i>
-            </nav>
+            </div>
             <!-- <div class="socials">
                 <ul>
                     <li><a href=""><i class="fa fa-instagram"></i></a></li>
@@ -29,7 +29,7 @@
                     <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
                 </ul>
             </div> -->
-        </div>
+        </nav>
 
 
     </body>
