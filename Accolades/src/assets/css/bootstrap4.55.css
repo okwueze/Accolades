@@ -6433,7 +6433,7 @@ a.close.disabled {
   content: "";
 }
 
-.carousel-item {
+.carousel-item {            
   position: relative;
   display: none;
   float: left;
