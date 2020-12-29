@@ -24,7 +24,7 @@ section, article, footer, .card{
 }
 
 .carousel-caption{
-     bottom: 12rem;
+     bottom: 15rem;
 }
 
 .carousel-caption h5{
@@ -49,8 +49,11 @@ section, article, footer, .card{
      // padding: 10px 30px;
      color: white;
      font-family: 'poppins', sans-serif;
-     border-radius: 2rem;
-     margin-top: 4rem;
+     border-radius: .5rem;
+     margin-top: 1rem;
+     font-size: 1.5rem;
+     line-height: 1.9;
+     font-family: 'Poppins', sans-serif;
 }
 
 .carousel-item img{
@@ -88,14 +91,19 @@ section, article, footer, .card{
      transform: scale(1.1);
 }
 
-.cards-first-article{
-     display: flex;
-     justify-content: space-around;
-}
+// .cards-first-article{
+//      display: flex;
+//      justify-content: space-around;
+// }
 
 .events{
      background-color: black;
      padding-bottom: 10rem;
+     text-align: center;
+}
+
+.events .card{
+     margin-left: 1.85rem;
 }
 
 .events h2{
@@ -110,9 +118,9 @@ section, article, footer, .card{
      background-image: url(../../../assets/img/artist-bg2.jpeg);
      background-repeat: no-repeat;
      background-size: cover;
-     background-color: rgb(69, 69, 69);
+     background-color: rgb(142, 142, 142);
      background-blend-mode: multiply;
-     
+     padding-bottom: 5rem;
 }
 
 .artist h2{
@@ -222,4 +230,150 @@ section, article, footer, .card{
 
 .modal .modal-header, .modal h2, .modal button{
      justify-content: center;
+}
+
+// Contact Us
+
+.contact{
+     background-image: url(../../../assets/img/world_map.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: rgb(142, 142, 142);
+     background-blend-mode: multiply;
+}
+
+.contact h2{
+     color: white;
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     padding-top: 5rem;
+     padding-bottom: 2.5rem;
+}
+
+.contact h3{
+     color: white;
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     padding-bottom: 2.5rem;
+}
+
+.yellow{
+     color: gold !important;
+}
+
+.contact button{
+     margin-top: 3.5rem;
+     margin-bottom: 3.5rem;
+}
+
+.form-flex{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.form-flex input{
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+}
+
+.contact textarea{
+     width: 100%;
+}
+
+.form-control:focus{
+     border-color: gold;
+     box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.8);
+}
+
+button{
+     font-weight: bold;
+}
+
+// Footer
+
+footer{
+     background-image: url(../../../assets/img/artist-bg2.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: rgb(21, 20, 20);
+     background-blend-mode: multiply;
+}
+
+footer p{
+     color: white;
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     padding: 2.5rem;
+}
+
+// Media Queries
+
+@media (min-width:1024px){
+     .hidden-event{
+          display: none;
+     }
+}
+
+@media (max-width:1024px){
+     .carousel-item{
+          height: 100%;
+     }
+
+     .events .card{
+          margin-right: 0;
+     }
+}
+
+@media (max-width:769px){
+
+     // Carousel
+
+     .carousel-caption{
+          bottom: 3rem;
+     }
+
+     .carousel-caption h5{
+          font-size: 3.5rem;
+     }
+
+     // Upcoming Events
+
+     .events h2{
+          padding-top: 5rem;
+     }
+
+     .events .card{
+          margin-bottom: 3rem;
+     }
+
+     
+
+     // Featured Artist
+
+     
+}
+
+@media (max-width:576px){
+     .carousel-inner .img-fluid{
+          width: 100%;
+          height: 30rem;
+     }
+
+     .carousel-caption{
+          bottom: 6.5rem;
+     }
+
+     .carousel-caption h5{
+          font-size: 2rem;
+     }
+
+     .carousel-caption p{
+          font-size: 1rem;
+     }
+
+     .carousel-caption a{
+          font-size: 1rem;
+          margin-top: .5rem;
+     }
 }

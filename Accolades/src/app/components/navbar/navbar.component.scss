@@ -2,7 +2,7 @@
 
 // NAVBAR
 
-.bg-color.scrolled{
+.bg-color.scrolled{ 
     background: black;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .nav-menu{
-    margin-right: 5rem;
+    margin-right: 8.5rem;
 }
 
 nav ul{
@@ -123,6 +123,12 @@ nav a:hover{
 
 @media(max-width: 769px){
 
+    .container{                       
+        display: flex;
+        justify-content: space-between;
+        align-items: center; //Don't forget  align items, aligns the item to the center on a horizontal axis
+    }
+
     .icon-bars{
         font-size: x-large;
     }
@@ -158,4 +164,9 @@ nav a:hover{
         align-items: center;
         transform: translateX(-200%); // As you can see down here we translated with X this is to make the 
     } // navbar appear from the side ie from left to right but if we use Y it will apppear from top to bottom
+}
+
+@media(max-width: 576px){
+
+    
 }
