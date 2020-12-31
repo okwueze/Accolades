@@ -18,8 +18,17 @@
 
 .link-active{
     color: gold !important;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 3px;
+        right: 0;
+        left: 0;
+        background: gold;
+        bottom: -3px;
+    }
 }
-
 .menu{
     align-items: center;
 }

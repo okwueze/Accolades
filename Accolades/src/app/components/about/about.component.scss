@@ -1,7 +1,118 @@
+
 .about-acc{
-     background-image: url(../../../assets/img/artist-bg1.jpeg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     // background-color: rgb(142, 142, 142);
-     // background-blend-mode: multiply;
+     background-color: black;
+     padding-top: 10rem;
+}
+
+.about-acc h2{
+     padding-bottom: 3rem;
+     text-align: center;
+     color: gold;
+     font-family: 'poppins', sans-serif;
+     font-size: 3rem;
+}
+
+// .border-underline{
+//      text-decoration: underline;
+//      background-color: gold;
+//      height: .25rem;
+// }
+
+// .about-acc h2::after{
+//      content: '';
+//      position: absolute;
+//      width: 15rem;
+//      height: 3px;
+//      background: gold;
+//      display: flex;
+//      justify-items: center;
+// }
+
+.about-acc h3{
+     padding-bottom: 2rem;
+     color: white;
+     font-family: 'poppins', sans-serif;
+     font-size: 2rem;
+}
+
+.about-acc p{
+     color: rgb(220, 214, 214);
+     font-family: 'poppins', sans-serif;
+     line-height: 2rem;
+}
+
+// Our Team
+
+.team{
+     background-color: black;
+     padding-top: 10rem;
+}
+
+.team h2{
+     padding-bottom: 3rem;
+     text-align: center;
+     color: gold;
+     font-family: 'poppins', sans-serif;
+     font-size: 3rem;
+}
+
+.team img{
+     width: 18rem;
+     height: 18rem;
+     border: 3px solid gold;     
+     text-align: center !important;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6{
+     align-items: center;
+}
+
+.team h3{
+     color: white;
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: 'poppins', sans-serif;
+}
+
+// Footer
+
+// footer{
+//      background-image: url(../../../assets/img/artist-bg2.jpeg);
+//      background-repeat: no-repeat;
+//      background-size: cover;
+//      background-color: rgb(21, 20, 20);
+//      background-blend-mode: multiply;
+// }
+
+footer{
+     background-color: black;
+}
+
+footer p{
+     color: white;
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     padding: 2.5rem;
+}
+
+// Media Queries
+
+@media(max-width: 576px){
+     // .team img{
+     //      width: 5rem;
+     //      height: 5rem;
+     // }
+
+     // .col-sm-3{
+     //      width: 30%;
+     // }
+
+     // .col-sm-6{
+     //      width: 70%;
+     // }
+
+     // .row1, .row2, .row3, .row4, .row5, .row6{
+     //      align-items: flex-start;
+     // }
+    
 }
