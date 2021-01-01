@@ -2,31 +2,27 @@
 .about-acc{
      background-color: black;
      padding-top: 10rem;
-}
+} 
 
 .about-acc h2{
-     padding-bottom: 3rem;
+     margin-bottom: 6.5rem;
      text-align: center;
-     color: gold;
+     color: white;
      font-family: 'poppins', sans-serif;
      font-size: 3rem;
+     position: relative;
+     &::after{
+          content: '';
+          position: absolute;
+          height: 2.7px;
+          margin-right: 40%;
+          margin-left: 40%;
+          right: 0;
+          left: 0;
+          background: gold;
+          bottom: -1rem;
+     }
 }
-
-// .border-underline{
-//      text-decoration: underline;
-//      background-color: gold;
-//      height: .25rem;
-// }
-
-// .about-acc h2::after{
-//      content: '';
-//      position: absolute;
-//      width: 15rem;
-//      height: 3px;
-//      background: gold;
-//      display: flex;
-//      justify-items: center;
-// }
 
 .about-acc h3{
      padding-bottom: 2rem;
@@ -49,70 +45,104 @@
 }
 
 .team h2{
-     padding-bottom: 3rem;
+     margin-bottom: 7rem;
      text-align: center;
      color: gold;
      font-family: 'poppins', sans-serif;
      font-size: 3rem;
+     position: relative;
+     &::after{
+          content: '';
+          position: absolute;
+          height: 2.7px;
+          margin-right: 45%;
+          margin-left: 45%;
+          right: 0;
+          left: 0;
+          background: gold;
+          bottom: -1rem;
+     }
 }
 
 .team img{
      width: 18rem;
      height: 18rem;
      border: 3px solid gold;     
-     text-align: center !important;
 }
 
-.row1, .row2, .row3, .row4, .row5, .row6{
-     align-items: center;
+.img-div{
+     text-align: center;
 }
 
 .team h3{
      color: white;
      text-align: center;
-     font-size: 1.5rem;
+     font-size: 1.7rem;
      font-family: 'poppins', sans-serif;
+}
+
+.team h4{
+     color: gold;
+     text-align: center;
+     font-size: 1rem;
+     font-family: 'poppins', sans-serif;
+     margin-bottom: 1.5rem;
+}
+
+.team p{
+     text-align: center;
 }
 
 // Footer
 
-// footer{
-//      background-image: url(../../../assets/img/artist-bg2.jpeg);
-//      background-repeat: no-repeat;
-//      background-size: cover;
-//      background-color: rgb(21, 20, 20);
-//      background-blend-mode: multiply;
-// }
-
 footer{
-     background-color: black;
+     padding: 2rem;
+     background-image: url(../../../assets/img/artist-bg2.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: rgb(55, 53, 53);
+     background-blend-mode: multiply;
 }
 
 footer p{
      color: white;
      text-align: center;
      font-family: 'poppins', sans-serif;
-     padding: 2.5rem;
 }
 
 // Media Queries
 
+@media(max-width: 769px){
+     .team{
+          padding-top: 7rem;
+     }
+}
+
 @media(max-width: 576px){
-     // .team img{
-     //      width: 5rem;
-     //      height: 5rem;
-     // }
+     .about-acc h2{
+          margin-bottom: 4rem;
+          &::after{
+               margin-right: 30%;
+               margin-left: 30%;
+          }
+     }
 
-     // .col-sm-3{
-     //      width: 30%;
-     // }
+     .team{
+          padding-top: 5rem;
+     }
 
-     // .col-sm-6{
-     //      width: 70%;
-     // }
+     .about-acc img{
+          margin-bottom: 5rem;
+     }
 
-     // .row1, .row2, .row3, .row4, .row5, .row6{
-     //      align-items: flex-start;
-     // }
-    
+     // Our Team
+
+     .team h2::after{
+          margin-right: 35%;
+          margin-left: 35%;
+     }
+
+     .team .col-md-4{
+          margin-bottom: 5rem;
+     }
 }
