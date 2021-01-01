@@ -1,7 +1,7 @@
 
 
 // NAVBAR
-
+ 
 .bg-color.scrolled{ 
     background: black;
 }
@@ -23,10 +23,12 @@
         content: '';
         position: absolute;
         height: 3px;
+        width: 2.5rem;
         right: 0;
         left: 0;
         background: gold;
         bottom: -3px;
+        justify-content: center;
     }
 }
 .menu{
@@ -59,7 +61,7 @@ nav a{
     font-family: 'Poppins', sans-serif;
 }
 
-nav a:hover{
+.nav1:hover{
     color: gold;
     cursor: pointer;
 }
