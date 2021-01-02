@@ -78,8 +78,14 @@ section, article, footer, .card{
 
 // Upcoming events
 
-.col-lg-4{
-     text-align: center;
+.flex-main{
+     display: flex;
+     justify-content: space-around;
+}
+
+.card h5{
+     font-size: 1.5rem;
+     font-family: 'poppins', sans-serif;
 }
 
 .card-img-top, .card-body a{
@@ -95,11 +101,6 @@ section, article, footer, .card{
      transform: scale(1.1);
 }
 
-// .cards-first-article{
-//      display: flex;
-//      justify-content: space-around;
-// }
-
 .events{
      background-color: black;
      padding-bottom: 10rem;
@@ -107,7 +108,10 @@ section, article, footer, .card{
 }
 
 .events .card{
-     margin-left: 1.85rem;
+     // margin-left: 1.85rem;
+     text-align: center !important;
+     margin: auto;
+     padding: auto;
 }
 
 .events h2{
@@ -118,6 +122,7 @@ section, article, footer, .card{
 }
 
 // Featured Artist
+
 .artist{
      background-image: url(../../../assets/img/artist-bg2.jpeg);
      background-repeat: no-repeat;
@@ -317,9 +322,11 @@ footer p{
      .hidden-event{
           display: none;
      }
+
 }
 
 @media (max-width:1024px){
+
      .carousel-item{
           height: 100%;
      }
@@ -342,6 +349,10 @@ footer p{
      }
 
      // Upcoming Events
+
+     .flex-main{
+          flex-wrap: wrap;
+     }
 
      .events h2{
           padding-top: 5rem;
