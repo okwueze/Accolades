@@ -11,7 +11,7 @@ section, article, footer, .card{
 }
 
 .card{
-     border: 1px solid gold;
+     border: 2px solid gold;
 }
 
 // Carousel
@@ -163,7 +163,7 @@ section, article, footer, .card{
 .artist img{
      width: 22rem;
      height: 20rem;
-     border: 1px solid gold;
+     border: 2px solid gold;
 }
 
 .card-body a{
@@ -255,11 +255,17 @@ section, article, footer, .card{
      opacity: 0.3;
    }
    
-// Modal for featured artists
+// Modal for Artist of the week
 
-.modal .modal-header, .modal h2, .modal button{
-     justify-content: center;
+.modal-body,{
+     text-align: center;
 }
+
+.modal-header{
+     align-items: center;
+}
+
+
 
 // Contact Us
 
