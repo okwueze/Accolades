@@ -257,12 +257,21 @@ section, article, footer, .card{
    
 // Modal for Artist of the week
 
-.modal-body,{
+.modal-content{
+     background-color: black;
+     color: white;
+}
+
+.modal-body{
      text-align: center;
 }
 
-.modal-header{
-     align-items: center;
+.modal-body img{
+     border: 2px solid gold;
+}
+
+.modal-header, .modal-footer{
+     justify-content: center;
 }
 
 

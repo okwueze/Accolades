@@ -94,7 +94,48 @@ section, article, footer{
 
 .team p{
      text-align: center;
+     font-size: 1.15rem;
 }
+
+// Team Social media handles
+
+.team-socials ul{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .team-socials li{
+     padding: 1rem;
+     list-style: none;
+     font-size: 1.7rem;
+     transition: transform .2s; 
+     /* The aim of the transition here is to animate the scale transformation when the mouse
+     is hovering on top of the object, ie make it a little bit slow and you must but the 
+     transition in the exact tag that you are going to apply the hover and transform property on
+     For Eg the (.socials li) will contain the transition animation of the transformation while
+     the (.socials li:hover) will contain the transformation as seen below */
+ }
+ 
+ .team-socials a{
+     color: white;
+ }
+ 
+ .team-socials li:hover{
+     cursor: pointer;
+     transform: scale(1.5);
+ }
+ 
+ .fa-instagram:hover{
+     color: rgb(169, 10, 184);
+ }
+ 
+ .fa-twitter:hover{
+     color: rgb(29, 203, 233);
+ }
+ 
+ .fa-linkedin:hover{
+     color: rgb(15, 139, 240);
+ }
 
 // Footer
 
@@ -147,5 +188,13 @@ footer p{
 
      .team .col-md-4{
           margin-bottom: 5rem;
+     }
+
+     .team p{
+          font-size: 1.3rem;
+     }
+
+     .team-socials li{
+          font-size: 2rem;
      }
 }
