@@ -139,6 +139,7 @@ section, article, footer, .card{
      background-image: url(../../../assets/img/artist-bg2.webp);
      background-repeat: no-repeat;
      background-size: cover;
+     min-height: 100%;
      background-color: rgb(142, 142, 142);
      background-blend-mode: multiply;
      padding-bottom: 5rem;
@@ -282,6 +283,7 @@ section, article, footer, .card{
      background-image: url(../../../assets/img/world_map.webp);
      background-repeat: no-repeat;
      background-size: cover;
+     min-height: 100%;
      background-color: rgb(142, 142, 142);
      background-blend-mode: multiply;
 }
