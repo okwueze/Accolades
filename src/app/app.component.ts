@@ -1,3 +1,8 @@
+import * as AOS from 'aos';
+{
+AOS.init();
+}
+
 import { Component } from '@angular/core';
 
 @Component({

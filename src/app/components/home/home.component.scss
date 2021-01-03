@@ -116,9 +116,21 @@ section, article, footer, .card{
 
 .events h2{
      padding-top: 8rem;
-     padding-bottom: 4rem;
+     padding-bottom: 5rem;
      font-family: 'poppins', sans-serif;
      text-align: center;
+     position: relative;
+     &::after{
+          content: '';
+          position: absolute;
+          height: 2.7px;
+          margin-right: 45%;
+          margin-left: 45%;
+          right: 0;
+          left: 0;
+          background: gold;
+          bottom: 3.5rem;
+     }
 }
 
 // Featured Artist
@@ -137,7 +149,15 @@ section, article, footer, .card{
      text-align: center;
      font-family: 'poppins', sans-serif;
      padding-top: 5rem;
-     padding-bottom: 5rem;
+     padding-bottom: .5rem;
+}
+
+.artist h4{
+     color: gold;
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     padding-bottom: 4.5rem;
+     font-size: 1.1rem;
 }
 
 .artist img{
@@ -260,10 +280,19 @@ section, article, footer, .card{
 }
 
 .contact h3{
+     color: gold;
+     text-align: center;
+     font-family: 'poppins', sans-serif;
+     font-size: 1.1rem;
+     padding-bottom: 2rem;
+}
+
+.contact h4{
      color: white;
      text-align: center;
      font-family: 'poppins', sans-serif;
-     padding-bottom: 2.5rem;
+     font-size: 2rem;
+     padding-bottom: 2rem;
 }
 
 .yellow{
@@ -356,6 +385,10 @@ footer p{
 
      .events h2{
           padding-top: 5rem;
+          &::after{
+               margin-right: 40%;
+               margin-left: 40%;
+          }
      }
 
      .events .card{
@@ -390,5 +423,14 @@ footer p{
      .carousel-caption a{
           font-size: 1rem;
           margin-top: .5rem;
+     }
+
+     // events
+
+     .events h2{
+          &::after{
+               margin-right: 35%;
+               margin-left: 35%;
+          }
      }
 }

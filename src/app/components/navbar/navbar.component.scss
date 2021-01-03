@@ -138,6 +138,11 @@ nav a{
 
 @media(max-width: 769px){
 
+    .image_1{
+        width: 80px;
+        height: 80px;
+    }
+
     .container{                       
         display: flex;
         justify-content: space-between;
