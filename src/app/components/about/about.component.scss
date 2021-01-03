@@ -43,8 +43,12 @@ section, article, footer{
 // Our Team
 
 .team{
-     background-color: black;
-     padding-top: 10rem;
+     background-image: url(../../../assets/img/team5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: rgb(38, 36, 36);
+     background-blend-mode: multiply;
+     padding-top: 7rem;
 }
 
 .team h2{
@@ -144,7 +148,7 @@ footer{
      background-image: url(../../../assets/img/artist-bg2.jpeg);
      background-repeat: no-repeat;
      background-size: cover;
-     background-color: rgb(55, 53, 53);
+     background-color: rgb(36, 35, 35);
      background-blend-mode: multiply;
 }
 
@@ -171,15 +175,20 @@ footer p{
           }
      }
 
-     .team{
-          padding-top: 5rem;
-     }
-
      .about-acc img{
           margin-bottom: 5rem;
      }
 
      // Our Team
+
+     .team{
+          padding-top: 5rem;
+          background-color: rgb(65, 62, 62);
+     }
+
+     .pb-5{
+          padding-bottom: 0rem;
+     }
 
      .team h2::after{
           margin-right: 35%;
@@ -197,4 +206,5 @@ footer p{
      .team-socials li{
           font-size: 2rem;
      }
+
 }
