@@ -45,11 +45,17 @@ section, article, footer{
 .team{
      background-image: url(../../../assets/img/team5.jpg);
      background-repeat: no-repeat;
-     background-size: cover;
-     min-height: 100%;
+     // background-size: cover;
      background-color: rgb(38, 36, 36);
      background-blend-mode: multiply;
      padding-top: 7rem;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+     background-attachment: scroll;
+     background-size: 100% 100%;
 }
 
 .team h2{
