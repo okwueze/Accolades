@@ -3,7 +3,7 @@
 // NAVBAR
  
 .bg-color.scrolled{ 
-    background: black;
+    background: black; // this css line is meant to make the bg color of the navbar change on scroll
 }
 
 .container{
@@ -159,7 +159,8 @@ nav a{
 
     nav li{
         padding-top: 2rem;
-        font-size: x-large;
+        font-size: 1.2rem;
+        padding-bottom: .5rem;
     }
 
     nav li a{
