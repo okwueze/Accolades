@@ -46,7 +46,7 @@ section, article, footer{
      background-image: url(../../../assets/img/team5.jpg);
      background-repeat: no-repeat;
      background-size: cover;
-     background-color: rgb(38, 36, 36);
+     background-color: rgb(52, 48, 48);
      background-blend-mode: multiply;
      padding-top: 7rem;
 }
@@ -183,7 +183,8 @@ footer p{
 
      .team{
           padding-top: 5rem;
-          // background-color: rgb(65, 62, 62);
+          background-attachment: scroll;
+          background-size: 100% 100%;
      }
 
      .pb-5{
