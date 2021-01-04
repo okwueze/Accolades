@@ -144,7 +144,6 @@ section, article, footer{
 // Footer
 
 footer{
-     padding: 2rem;
      background-image: url(../../../assets/img/artist-bg2.jpeg);
      background-repeat: no-repeat;
      background-size: cover;
@@ -156,6 +155,7 @@ footer p{
      color: white;
      text-align: center;
      font-family: 'poppins', sans-serif;
+     padding: 2rem;
 }
 
 // Media Queries
@@ -205,6 +205,16 @@ footer p{
 
      .team-socials li{
           font-size: 2rem;
+     }
+
+     // Footer
+
+     footer p{
+          padding: 0rem;
+     }
+
+     footer .para-1{
+          padding-top: 1rem;
      }
 
 }
