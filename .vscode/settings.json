@@ -1,7 +1,7 @@
 {
-          "editor.fontSize": 13,
-          "cSpell.ignoreWords": [
+     "cSpell.ignoreWords": [
                     "toggleview"
           ],
-          "editor.tabSize": 5
+          "editor.tabSize": 5,
+          "files.autoSave": "afterDelay"
 }
