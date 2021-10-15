@@ -7,22 +7,40 @@
                 <ul class="menu" id="navbar-ul" [ngClass]="{'toggleview': mobileMenu == true}">
                     <img src="../../../assets/img/Accolades 3.jpg" alt="Logo" class="image_2" width="140px" height="140px">
                     <li><a routerLink="" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact:
-                        true}"><i class="fas fa-home mr-1 nav1"></i>Home</a></li>
+                        true}">Music</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Discover</a></li>
                     <li class="nav-menu"><a routerLink="/about" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact:
-                        true}"><i class="fas fa-address-card mr-1 "></i>About</a></li>
+                        true}">About</a></li>
                     <!-- <li><a href=""><i class="fas fa-award mr-1"></i>Awards</a></li>
                     <li><a href=""><i class="fas fa-people-arrows mr-1"></i>Nominees</a></li> -->
                     <!-- <li class="nav-menu"><a href=""><i class="fas fa-newspaper mr-1"></i>News</a></li>  -->
-                    <div class="socials">
+                    <!-- <div class="socials">
                         <ul>
                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
                             <li><a href=""><i class="fa fa-youtube"></i></a></li>
                             <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
                         </ul>
+                    </div> -->
+
+                    <div class="search">
+                         <input type="text">
+                         <button><i class="fas fa-search"></i></button>
                     </div>
+
+                    <!-- <div class="input-group rounded">
+                         <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                         aria-describedby="search-addon" />
+                         <span class="input-group-text border-0" id="search-addon">
+                         <i class="fas fa-search"></i>
+                         </span>
+                    </div> -->
+                    
                 </ul>
                 <i class="fas fa-bars d-sm-block icon-bars" 
                 (click)="toggleSidebar()" id="toggle"></i>
+                
             </div>
             <!-- <div class="socials"> 
                 <ul>

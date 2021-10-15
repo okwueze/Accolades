@@ -1,5 +1,3 @@
-
-
 // NAVBAR
  
 .bg-color.scrolled{ 
@@ -8,7 +6,7 @@
 
 .container{ 
     display: flex;
-    justify-content: space-around;
+//     justify-content: space-around;
     align-items: center; //Don't forget  align items, aligns the item to the center on a horizontal axis
 }
 
@@ -116,6 +114,41 @@ nav a{
     color: rgb(15, 139, 240);
 }
 
+// Search Box
+
+.search{
+     width: 300px;
+     height: 40px;
+     background: white;
+     border-radius: 1rem;
+     display: flex;
+     align-items: center;
+     padding: .5rem;
+
+     input{
+          flex: 1;
+          height: 30px;
+          border: none;
+          outline: none;
+          font-size: 18px;
+     }
+
+     button{
+          border: none;
+          outline: none;
+          background: white;
+
+          i{
+               font-size: 18px;
+               color: rgb(51, 50, 50);
+          }
+     }
+
+     
+}
+
+// RESPONSIVENESS
+
 .toggleview{
     transform: translateY(0) !important; // This line of code will make the navbar diappear so if you use
 } // X translate then it will not disappear and we want it to disappear so that the user will have to click
@@ -149,8 +182,14 @@ nav a{
         align-items: center; //Don't forget  align items, aligns the item to the center on a horizontal axis
     }
 
+    .search{
+         margin-top: 1rem;
+    }
+
     .icon-bars{
         font-size: x-large;
+        z-index: 99999;
+
     }
 
     .nav-menu{
@@ -173,7 +212,7 @@ nav a{
         bottom: 0;
         left: 0;
         overflow: hidden;
-        width: 17rem;
+        width: 100%;
         padding-top: 1rem;
         margin-bottom: 0;
         padding-bottom: 1rem;
@@ -185,9 +224,4 @@ nav a{
         align-items: center;
         transform: translateX(-200%); // As you can see down here we translated with X this is to make the 
     } // navbar appear from the side ie from left to right but if we use Y it will apppear from top to bottom
-}
-
-@media(max-width: 576px){
-
-    
 }
