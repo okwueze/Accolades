@@ -107,7 +107,7 @@ section, article, footer, .card{
 }
 
 .events{
-     background-color: black;
+     background-color: rgb(255, 255, 255);
      padding-bottom: 10rem;
      text-align: center;
 }
@@ -120,11 +120,14 @@ section, article, footer, .card{
 }
 
 .events h2{
-     padding-top: 8rem;
-     padding-bottom: 5rem;
+     color: black;
+     font-size: 1.5rem;
+     padding-top: 4rem;
+     padding-bottom: 4rem;
      font-family: 'poppins', sans-serif;
      text-align: center;
      position: relative;
+     
      &::after{
           content: '';
           position: absolute;
@@ -137,6 +140,62 @@ section, article, footer, .card{
           bottom: 3.5rem;
      }
 }
+
+.mason{
+
+     display: grid;
+     // grid-gap: 5px;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-auto-rows: 200px;
+     grid-auto-flow: dense;
+
+     .tall {
+          position: relative;
+          grid-row: span 2;
+          transition: all 1s;
+
+          .first-txt {
+               position: absolute;
+               font-size: 1.2rem;
+               font-weight: bold;
+               top: 20rem;
+               left: 50px;
+               color: white;
+          }
+
+          .overlay{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: rgba(0, 0, 0, 0.6);
+               color: white;
+               opacity: 0;
+               transition: opacity 0.5s;
+          }
+
+          .overlay:hover{
+               opacity: 1;
+               cursor: pointer;
+          }
+
+     }
+
+     div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     };
+
+     div > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          // border-radius: 5px;
+     };
+}
+
 
 // Featured Artist
 
